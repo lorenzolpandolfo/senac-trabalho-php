@@ -1,0 +1,21 @@
+
+.about {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-left {
+    width: 424px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    a {
+        width: 300px;
+    }
+}
+
+.title {
+    font-size: 52px;
+}

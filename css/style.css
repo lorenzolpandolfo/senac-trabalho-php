@@ -1,17 +1,59 @@
+@import url('./header.css');
+@import url('./about.css');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Sora', sans-serif;
+
+    --primary-text-color: #2D334A;
+
+    --secondary-color: #FFCB56;
+
+    color: var(--primary-text-color);
+    font-size: 22px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.center-container {
+    margin: 0 10vw;
+    max-width: 1980px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+a:hover {
+    transform: scale(1.15);
 }
 
 .header-nav {
     display: flex;
+    list-style: none;
+
+    li {
+        padding-left: 20px;
+    }
+}
+
+.primary-button {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.secondary-button {
+    background-color: white;
+    border: solid 2px var(--primary-text-color);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px 0;
 }
