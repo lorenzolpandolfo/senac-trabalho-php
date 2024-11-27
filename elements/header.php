@@ -1,26 +1,28 @@
 <div class="header">
     <div class="header-in center-container">
-        <span class="title">Techio</span>
+        <a href="/">
+            <span class="title">Techio</span>
+        </a>
         <nav>
           <ul class="header-nav">
             <li>
-              <a href="/teste">Sobre</a>
+              <a href="#about">Sobre</a>
             </li>
       
             <li>    
-              <a href="/teste">Serviços</a>
+              <a href="#services">Serviços</a>
             </li>
       
             <li>
-              <a href="/teste">Projetos</a>
+              <a href="#projects">Projetos</a>
             </li>
       
             <li>
-              <a href="/teste">Notícias</a>
+              <a href="#news">Notícias</a>
             </li>
       
             <li>
-              <a href="/teste">Contato</a>
+              <a href="#contact">Contato</a>
             </li>
           </ul>
         </nav>

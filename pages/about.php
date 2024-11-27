@@ -1,9 +1,15 @@
-<section class="about" id="home">
-    <div class="about-left">
-        <span class="title">Uma solução moderna para software sob medida</span>
+<?php
+include "constants.php";
+?>
 
-        <a class="primary-button">conhecer</a>
-        <a class="secondary-button">entre em contato</a>
+<section class="page about" id="about">
+    <div class="about-left">
+        <span class="title">Sobre nós</span>
+        <span class="description">
+            <?php
+            echo isset($_SESSION) ? "mensagem dinamica" : $DEFAULT_ABOUT_US_MESSAGE;
+            ?>
+        </span>
     </div>
-    <img src="../assets/images/home.svg">
+    <img src="../assets/images/about.svg">
 </section>

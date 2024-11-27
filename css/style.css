@@ -1,5 +1,7 @@
 @import url('./header.css');
+@import url('./home.css');
 @import url('./about.css');
+@import url('./services.css');
 
 * {
     box-sizing: border-box;
@@ -56,4 +58,20 @@ a:hover {
     padding: 10px;
     border-radius: 20px;
     margin: 5px 0;
+}
+
+.page {
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: 500;
+}
+
+
+.subtitle {
+    font-size: 38px;
 }

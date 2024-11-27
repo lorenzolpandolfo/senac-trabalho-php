@@ -17,7 +17,9 @@
   ?>
   <main class="center-container">
   <?php
+    include 'pages/home.php';
     include 'pages/about.php';
+    include 'pages/services.php';
   ?>
   </main>
 </body>

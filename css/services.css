@@ -1,15 +1,13 @@
-.about {
+
+.services {
     display: flex;
     justify-content: space-between;
-
-    img {
-        max-width: 500px;
-    }
 }
 
-.about-left {
-    width: 424px;
+
+.services-left {
     display: flex;
+    width: 424px;
     flex-direction: column;
     align-items: start;
 }

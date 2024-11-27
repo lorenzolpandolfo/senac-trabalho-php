@@ -1,15 +1,16 @@
-.about {
+
+.home {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-
-    img {
-        max-width: 500px;
-    }
 }
-
-.about-left {
+.home-left {
     width: 424px;
     display: flex;
     flex-direction: column;
     align-items: start;
+
+    a {
+        width: 300px;
+    }
 }
