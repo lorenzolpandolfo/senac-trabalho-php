@@ -16,11 +16,14 @@
     include 'elements/header.php';
   ?>
   <main class="center-container">
-  <?php
-    include 'pages/home.php';
-    include 'pages/about.php';
-    include 'pages/services.php';
-  ?>
+    <?php
+      include 'pages/home.php';
+      include 'pages/about.php';
+      include 'pages/services.php';
+    ?>
   </main>
+  <?php
+    include 'elements/footer.php';
+  ?>
 </body>
 </html>

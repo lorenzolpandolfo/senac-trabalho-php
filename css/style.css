@@ -2,6 +2,7 @@
 @import url('./home.css');
 @import url('./about.css');
 @import url('./services.css');
+@import url('./footer.css');
 
 * {
     box-sizing: border-box;
@@ -13,8 +14,15 @@
 
     --secondary-color: #FFCB56;
 
+    --background-color: #F5F5F5;
+    --secondary-background-color: white;
+
     color: var(--primary-text-color);
     font-size: 22px;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 .center-container {
