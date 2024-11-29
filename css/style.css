@@ -4,6 +4,7 @@
 @import url('services.css');
 @import url('footer.css');
 @import url('admin_login.css');
+@import url('contact.css');
 
 * {
     box-sizing: border-box;
@@ -31,7 +32,9 @@ body {
     max-width: 1980px;
 }
 
-a {
+a,
+.primary-button,
+.secondary-button {
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s ease;
@@ -39,7 +42,9 @@ a {
     text-align: center;
 }
 
-a:hover {
+a:hover,
+.primary-button:hover,
+.secondary-button:hover {
     transform: scale(1.15);
 }
 
@@ -93,13 +98,18 @@ a:hover {
     font-size: 38px;
 }
 
-input {
+input,
+textarea {
     padding: 5px;
     border-radius: 25px;
     border: solid 2px var(--primary-text-color);
 
     font-size: 28px;
     margin-bottom: 10px;
+}
+
+textarea {
+    height: 262px;
 }
 
 .big-button {

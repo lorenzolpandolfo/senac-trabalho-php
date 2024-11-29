@@ -1,1 +1,32 @@
-/*Vou continuar o css do contato aqui*/
+.right-size {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 50px 30px;
+    border-radius: 40px;
+}
+
+.contact-left {
+    display: flex;
+    width: 424px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact-shadow {
+    background-color: var(--secondary-color);
+    width: 436px;
+    height: 500px;
+    border-radius: 40px;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-90px);
+}

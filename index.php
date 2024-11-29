@@ -20,6 +20,7 @@
       include 'pages/home.php';
       include 'pages/about.php';
       include 'pages/services.php';
+      include 'pages/contact.php';
     ?>
   </main>
   <?php

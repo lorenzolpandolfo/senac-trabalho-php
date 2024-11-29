@@ -1,14 +1,12 @@
-<section class="page contact" id="about">
+<section class="page contact" id="contact">
     <div class="contact-left">
         <span class="title">Contato</span>
-        <span class="description">
-           <p>Entre em contato conosco.</p>
-        </span>
+        <span class="subtitle">Entre em contato conosco</span>
     </div>
-    <form method="post">
-		<input type="email" name="email" placeholder="Seu E-mail" required>
-
-		<input type="text" name="mensagem" placeholder="Deixe uma mensagem" required>
-		<input type="submit" name="enviar" value="enviar">
+    <form action="" method="post" class="right-size contact-card">
+        <input type="text" name="subject" id="subject" placeholder="Assunto" required>
+        <textarea name="message" id="message" placeholder="Deixe uma mensagem" required></textarea>
+        <button type="submit" class="primary-button big-button">enviar</button>
+        <div class="contact-shadow"></div>
 	</form>
 </section>
