@@ -5,3 +5,8 @@ create table user (
 	password varchar(500)
 );
 
+create table content (
+	id bigint AUTO_INCREMENT PRIMARY KEY,
+	text varchar(500),
+	
+)
