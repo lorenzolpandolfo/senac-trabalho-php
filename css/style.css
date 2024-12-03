@@ -32,9 +32,12 @@ body {
     max-width: 1980px;
 }
 
+ul {
+    list-style: none;
+}
+
 a,
-.primary-button,
-.secondary-button {
+.btn {
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s ease;
@@ -43,8 +46,7 @@ a,
 }
 
 a:hover,
-.primary-button:hover,
-.secondary-button:hover {
+.btn:hover {
     transform: scale(1.15);
 }
 
@@ -132,8 +134,8 @@ button:hover {
     border-radius: 20px;
     margin: 5px 0;
     width: 300px;
+}
 
-    span {
-        margin-left: 20px;
-    }
+.dsb-spacing {
+    padding-top: 40px;
 }

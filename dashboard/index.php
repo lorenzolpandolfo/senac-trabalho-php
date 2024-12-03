@@ -17,7 +17,7 @@
     <?php
         include "elements/header.php";
         ?>
-    <main>
+    <main class="center-container dsb-spacing">
         <?php
             include "elements/sidebar.php";
         ?>
