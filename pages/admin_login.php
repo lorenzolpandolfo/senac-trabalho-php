@@ -10,7 +10,6 @@ include "constants.php";
         <input type="email" name="email" id="email" placeholder="email" required>
         <input type="password" name="password" id="password" placeholder="senha" required>
         <button type="submit" class="primary-button big-button">acessar</button>
-
     </form>
 
 
