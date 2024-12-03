@@ -1,5 +1,5 @@
 <?php
-include "constants.php";
+include "utils/constants.php";
 ?>
 
 <section class="page services" id="services">

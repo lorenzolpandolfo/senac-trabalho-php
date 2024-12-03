@@ -1,5 +1,5 @@
 <?php
-include "constants.php";
+include "utils/constants.php";
 session_start();
 ?>
 

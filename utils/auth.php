@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = login_user($pdo, $email, $password);
     if ($user) {
         $_SESSION['user'] = $user;
-        // header('Location: dashboard.php');
+        header('Location: /dashboard');
         exit;
     }
     header('Location: ../admin');

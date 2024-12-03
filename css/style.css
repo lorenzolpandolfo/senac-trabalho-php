@@ -124,3 +124,16 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+.dashboard-button {
+    background-color: white;
+    border: solid 2px var(--primary-text-color);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px 0;
+    width: 300px;
+
+    span {
+        margin-left: 20px;
+    }
+}
