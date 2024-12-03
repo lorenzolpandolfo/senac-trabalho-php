@@ -17,3 +17,7 @@ create table content (
 	location ENUM('HOME', 'ABOUT', 'SERVICES') NOT NULL
 );
 
+insert into user (full_name, email, password) values
+('Lorenzo Pandolfo', 'lorenzopandolfo@gmail.com', '$2y$10$m/197FJruzIoTkpVz6meaO0U5O7dLfeqkEM7Z50l/Opnnj7KwcrFy'),
+('Julia Dornelles', 'juliadornelles@gmail.com', '$2y$10$m/197FJruzIoTkpVz6meaO0U5O7dLfeqkEM7Z50l/Opnnj7KwcrFy');
+
