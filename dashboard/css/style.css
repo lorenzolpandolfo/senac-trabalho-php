@@ -5,11 +5,6 @@
     display: flex;
     justify-content: space-between;
 
-    .btn {
-        border-radius: 30px;
-    }
-
-
     img {
         border-radius: 50%;
     }

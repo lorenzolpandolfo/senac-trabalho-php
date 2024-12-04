@@ -5,12 +5,10 @@ include "../utils/constants.php";
 session_start();
 
 $new_name = $_POST["full_name"];
-$new_pfp_path = $_POST["pfp_path"] ?: $DEFAULT_IMAGE_PFP;
 
 $u = $_SESSION["user"];
 
 $u["full_name"] = $new_name ?: $u["full_name"];
-$u["pfp_path"] = $new_pfp_path ?: $u["pfp_path"];
 
 update_user($u);
 $_SESSION["user"] = get_user_data();
@@ -36,7 +34,7 @@ function update_user($user) {
         $stmt->bindParam(':id', $user['id']);
 
         $stmt->execute();
-        
+
         return ($stmt->rowCount() > 0);
 
     } catch (PDOException $e) {

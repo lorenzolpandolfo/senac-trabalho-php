@@ -1,7 +1,7 @@
 create table user (
 	id bigint AUTO_INCREMENT PRIMARY KEY,
 	full_name varchar(256) NOT NULL,
-	pfp_path varchar(500) DEFAULT 'uploads/users/default.jpg',
+	pfp_path varchar(500) DEFAULT 'upload/uploads/users/default.jpg',
 	email varchar(256) UNIQUE NOT NULL,
 	password varchar(500) NOT NULL,
 	role ENUM('ADMIN', 'NORMAL') DEFAULT 'NORMAL'
