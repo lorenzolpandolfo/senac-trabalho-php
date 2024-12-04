@@ -1,0 +1,40 @@
+@import url(profile.css);
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+        border-radius: 30px;
+    }
+}
+
+.dashboard-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    border: solid 2px var(--primary-text-color);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px 0;
+}
+
+
+.dashboard-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+}

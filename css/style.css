@@ -5,6 +5,7 @@
 @import url('footer.css');
 @import url('admin_login.css');
 @import url('contact.css');
+@import url('../dashboard/css/style.css');
 
 * {
     box-sizing: border-box;
