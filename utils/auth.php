@@ -63,5 +63,4 @@ function login_user($pdo, $email, $password) {
         return null;
     }
 }
-
 ?>
