@@ -3,19 +3,19 @@
     <div class="dashboard-center">
         <div class="top-div">
             <img src="https://i.pinimg.com/236x/68/31/12/68311248ba2f6e0ba94ff6da62eac9f6.jpg" alt="user profile">
-            <input type="button" value="editar" class="btn secondary-button">
+            <input type="button" value="editar" class="btn secondary-button small-button">
         </div>
         <div>
             <div>
-                <input type="button" value="editar" class="btn secondary-button">
+                <input type="button" value="editar" class="btn secondary-button small-button">
                 <span>Lorenzo Pandolfo</span>    
             </div>
             <div>
-                <input type="button" value="editar" class="btn btn secondary-button">
+                <input type="button" value="editar" class="btn secondary-button small-button">
                 <span>lorenzopandolfo@gmail.com</span>    
             </div>
             <div>
-                <input type="button" value="editar" class="btn secondary-button">
+                <input type="button" value="editar" class="btn secondary-button small-button">
                 <span>Administrador</span>    
             </div>
         </div>

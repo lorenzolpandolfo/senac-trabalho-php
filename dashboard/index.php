@@ -1,5 +1,6 @@
 <?php
     include "../utils/protect.php";
+    session_start();
 ?>
 
 <!DOCTYPE html>
