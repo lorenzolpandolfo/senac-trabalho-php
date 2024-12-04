@@ -1,6 +1,18 @@
 <?php
     include "../utils/protect.php";
+    include "../utils/constants.php";
     session_start();
+
+    $sections = [
+        "profile" => "sections/profile.php",
+        "users" => "sections/users.php",
+    ];
+
+    if (!isset($_SESSION["dashboard_section"])) {
+        $_SESSION["dashboard_section"] = $DEFAULT_DASHBOARD_SECTION;
+    }
+
+    $section = $_SESSION["dashboard_section"];
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +33,7 @@
     <main class="center-container dsb-spacing dashboard">
         <?php
             include "elements/sidebar.php";
-            include "sections/profile.php";
+            include $sections[$section];
         ?>
     </main>
     <?php

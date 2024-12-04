@@ -17,27 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 
-function register_user($fullName, $email, $password) {
-    include "database.php";
-
-    try {
-        $stmt = $pdo->prepare("INSERT INTO user (full_name, email, password) VALUES (:full_name, :email, :password)");
-        $stmt->bindParam(':full_name', $fullName);
-        $stmt->bindParam(':email', $email);
-
-        $passwordHash = password_hash($password, PASSWORD_BCRYPT);
-        $stmt->bindParam(':password', $passwordHash);
-
-        if ($stmt->execute()) {
-            echo "Usuário registrado com sucesso!";
-        } else {
-            echo "Erro ao registrar o usuário.";
-        }
-    } catch (PDOException $e) {
-        echo "Erro ao executar a operação: " . $e->getMessage();
-    }
-}
-
 function login_user($email, $password) {
     include "database.php";
 

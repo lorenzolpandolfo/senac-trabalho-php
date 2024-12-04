@@ -1,24 +1,24 @@
-<div class="sidebar">
+<form action="/utils/change_dashboard_section.php" method="POST" class="sidebar">
     <ul>
         <li>
-            <div class="btn dashboard-button">
+            <button class="btn dashboard-button" type="submit" name="section_to" value="profile">
                 <span class="dashboard-btn-title">Meu perfil</span>
-            </div>
+            </button>
         </li>
         <li>
-            <div class="btn dashboard-button">
+            <button class="btn dashboard-button" type="submit" name="section_to" value="users">
                 <span class="dashboard-btn-title">Usuários</span>
-            </div>
+            </button>
         </li>
         <li>
-            <div class="btn dashboard-button">
+            <button class="btn dashboard-button" type="submit" name="section_to" value="content">
                 <span class="dashboard-btn-title">Conteúdo</span>
-            </div>
+            </button>
         </li>
         <li>
-            <div class="btn dashboard-button">
+            <button class="btn dashboard-button" type="submit" name="section_to" value="contact">
                 <span class="dashboard-btn-title">Contato</span>
-            </div>
+            </button>
         </li>
     </ul>
-</div>
+</form>
