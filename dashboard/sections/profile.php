@@ -3,7 +3,7 @@
     <form action="/utils/update_user.php" method="POST" class="dashboard-center">
         <div class="top-div">
             <?php
-                echo "<img src='{$_SESSION['user']['pfp_path']}' alt='user profile'>";
+                echo "<img src='{$_SESSION['user']['pfp_path']}' alt='user profile' draggable='false'>";
             ?>
             <input type="button" value="upload" class="btn secondary-button small-button">
         </div>

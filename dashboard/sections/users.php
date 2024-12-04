@@ -19,7 +19,7 @@ $_SESSION["admins"] = get_all_admin();
                                 $pfpPath = htmlspecialchars($admin['pfp_path']);
 
                                 echo "<div class='admin-item'>";
-                                echo "<img src='$pfpPath' alt='Foto de $fullName' class='admin-img'>";
+                                echo "<img src='$pfpPath' alt='Foto de $fullName' class='admin-img' draggable='false'>";
                                 echo "<span class='admin-name'>$fullName</span>";
                                 echo "</div>";
                             }

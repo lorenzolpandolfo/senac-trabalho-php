@@ -11,5 +11,5 @@ include "utils/constants.php";
             ?>
         </span>
     </div>
-    <img src="assets/images/services.svg">
+    <img src="assets/images/services.svg" draggable="false">
 </section>
