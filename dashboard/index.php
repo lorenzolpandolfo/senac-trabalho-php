@@ -24,5 +24,8 @@
             include "sections/profile.php";
         ?>
     </main>
+    <?php
+        include '../elements/footer.php';
+    ?>
 </body>
 </html>

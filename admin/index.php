@@ -24,10 +24,10 @@ if (isset($_SESSION) && $_SESSION["user"]) {
   <main class="center-container">
     <?php
       include '../pages/admin_login.php';
-    ?>
+      ?>
   </main>
   <?php
-    include '../elements/footer.php';
+  include '../elements/footer.php';
   ?>
 </body>
 </html>
