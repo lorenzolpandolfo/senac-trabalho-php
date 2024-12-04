@@ -7,6 +7,12 @@
     .btn {
         border-radius: 30px;
     }
+
+
+    img {
+        border-radius: 50%;
+    }
+
 }
 
 .dashboard-section {
@@ -33,10 +39,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-img {
-    border-radius: 50%;
 }
 
 .dashboard-input {
