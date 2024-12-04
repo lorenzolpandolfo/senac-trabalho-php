@@ -1,6 +1,5 @@
 <?php
 
-include "database.php";
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -8,8 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $password = filter_input(INPUT_POST, 'password');
 
-    // register_user($pdo, "Lorenzo", $email, $password);
-    $user = login_user($pdo, $email, $password);
+    $user = login_user($email, $password);
     if ($user) {
         $_SESSION['user'] = $user;
         header('Location: /dashboard');
@@ -19,7 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 
-function register_user($pdo, $fullName, $email, $password) {
+function register_user($fullName, $email, $password) {
+    include "database.php";
+
     try {
         $stmt = $pdo->prepare("INSERT INTO user (full_name, email, password) VALUES (:full_name, :email, :password)");
         $stmt->bindParam(':full_name', $fullName);
@@ -38,7 +38,9 @@ function register_user($pdo, $fullName, $email, $password) {
     }
 }
 
-function login_user($pdo, $email, $password) {
+function login_user($email, $password) {
+    include "database.php";
+
     try {
         $stmt = $pdo->prepare("SELECT * FROM user WHERE email = :email");
         $stmt->bindParam(':email', $email);
@@ -47,7 +49,6 @@ function login_user($pdo, $email, $password) {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($user) {
-            print_r($password);
             if (password_verify($password, $user['password'])) {
                 return $user;
             } else {
@@ -59,7 +60,8 @@ function login_user($pdo, $email, $password) {
             return null;
         }
     } catch (PDOException $e) {
-        echo "Erro ao executar a operação: " . $e->getMessage();
+        header('Location: /logout');
+        
         return null;
     }
 }

@@ -3,10 +3,10 @@ services:
     image: mysql:latest
     container_name: mysql-container
     environment:
-      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: lojubanco
       MYSQL_USER: user
-      MYSQL_PASSWORD: 123
+      MYSQL_PASSWORD: 123456
     ports:
       - "3306:3306"
     volumes:

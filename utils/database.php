@@ -1,14 +1,14 @@
 <?php
 $host = 'localhost:3306';
 $dbname = 'lojubanco';
-$username = 'user';
-$password = '123';
+$db_username = 'user';
+$db_password = '123456';
+// ver se esse password nao ta conflitando no login ou register
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $db_username, $db_password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    echo "Conexão bem-sucedida!";
 } catch (PDOException $e) {
     echo "Erro ao conectar: " . $e->getMessage();
 }
