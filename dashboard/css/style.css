@@ -1,5 +1,6 @@
 @import url(profile.css);
 @import url(users.css);
+@import url(contact.css);
 
 .dashboard {
     display: flex;

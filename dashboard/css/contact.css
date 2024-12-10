@@ -1,0 +1,19 @@
+
+.messages-list {
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.message {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    padding: 15px;
+    margin: 15px 0;
+
+    span {
+        color: white;
+        font-weight: 500;
+    }
+}

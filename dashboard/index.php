@@ -6,6 +6,7 @@
     $sections = [
         "profile" => "sections/profile.php",
         "users" => "sections/users.php",
+        "contact" => "sections/contact.php",
     ];
 
     if (!isset($_SESSION["dashboard_section"])) {

@@ -10,7 +10,7 @@ create table user (
 create table message (
 	id bigint AUTO_INCREMENT PRIMARY KEY,
 	subject varchar(255) NOT NULL,
-	text TEXT NOT NULL
+	content TEXT NOT NULL
 );
 
 create table content (
