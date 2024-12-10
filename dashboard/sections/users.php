@@ -17,10 +17,22 @@ $_SESSION["admins"] = get_all_admin();
                             foreach ($_SESSION["admins"] as $admin) {
                                 $fullName = htmlspecialchars($admin['full_name']);
                                 $pfpPath = htmlspecialchars($admin['pfp_path']);
+                                $userId = htmlspecialchars($admin['id']);
 
                                 echo "<div class='admin-item'>";
+                                echo "<div class='user-card'>";
                                 echo "<img src='$pfpPath' alt='Foto de $fullName' class='admin-img' draggable='false'>";
                                 echo "<span class='admin-name'>$fullName</span>";
+                                echo "</div>";
+
+                                if ($_SESSION['user']['id'] != $userId) {
+                                    echo "<form action='utils/delete.php' method='post'>";
+                                    echo "<input type='hidden' name='userId_to_delete' value='$userId'>";
+                                    echo "<button class='invisible-button' type='submit'>";
+                                    echo "<img class='btn trash' src='/assets/images/trash.svg'>";
+                                    echo "</button>";
+                                    echo "</form>";
+                                }
                                 echo "</div>";
                             }
                         } else {

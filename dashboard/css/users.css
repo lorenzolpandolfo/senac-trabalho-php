@@ -15,19 +15,36 @@
 
 .admin-item {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     background-color: rebeccapurple;
     margin: 10px;
     padding: 10px;
     border-radius: 30px;
     align-items: center;
 
-    img {
+    .admin-img {
         width: 60px;
         height: 60px;
         object-fit: cover;
         margin-right: 10px;
     }
+
+    button {
+        background-color: rebeccapurple;
+        border-radius: 50%;
+        margin: 10px;
+    }
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+
+}
+
+.trash {
+    width: 30px;
+    height: 30px;
 }
 
 .admin-name {

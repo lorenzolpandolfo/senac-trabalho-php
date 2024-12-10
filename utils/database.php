@@ -3,7 +3,6 @@ $host = 'localhost:3306';
 $dbname = 'lojubanco';
 $db_username = 'user';
 $db_password = '123456';
-// ver se esse password nao ta conflitando no login ou register
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $db_username, $db_password);
