@@ -11,7 +11,7 @@ $all_messages = get_all_messages();
         <form action="" method="GET">
             <?php
                 if (!empty($all_messages)) {
-                    foreach ($all_messages as $message) {
+                    foreach (array_reverse($all_messages) as $message) {
                         $subject = htmlspecialchars($message['subject']);
                         $content = htmlspecialchars($message['content']);
                         echo "<div class='message'>";
