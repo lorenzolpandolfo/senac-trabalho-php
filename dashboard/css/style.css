@@ -2,6 +2,7 @@
 @import url(users.css);
 @import url(contact.css);
 @import url(content.css);
+@import url(projects.css);
 
 .dashboard {
     display: flex;

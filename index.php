@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +18,7 @@
       include 'pages/home.php';
       include 'pages/about.php';
       include 'pages/services.php';
+      include 'pages/projects.php';
       include 'pages/contact.php';
     ?>
   </main>
