@@ -1,5 +1,7 @@
 <?php
 
+$DEFAULT_HOME_MESSAGE = "Uma solução moderna para software sob medida";
+
 $DEFAULT_ABOUT_US_MESSAGE = "Desde 2004, fornecemos alternativas de software para empresas. Buscamos excelência nos nossos serviços e estamos prontos para enfretar qualquer desafio.
 Utilizamos as tecnologias mais atualizadas no mercado, proporcionando uma experiência moderna nos nossos produtos.";
 
