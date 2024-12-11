@@ -7,6 +7,7 @@
         "profile" => "sections/profile.php",
         "users" => "sections/users.php",
         "contact" => "sections/contact.php",
+        "content" => "sections/content.php"
     ];
 
     if (!isset($_SESSION["dashboard_section"])) {

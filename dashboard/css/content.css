@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 40px;
+
+    button {
+        width: 170px;
+    }
+}
