@@ -24,7 +24,7 @@ $_SESSION["admins"] = get_all_admin();
                             echo "</div>";
 
                             if ($_SESSION['user']['id'] != $userId) {
-                                echo "<form action='utils/delete.php' method='post'>";
+                                echo "<form action='../utils/delete.php' method='post'>";
                                 echo "<input type='hidden' name='userId_to_delete' value='$userId'>";
                                 echo "<button class='invisible-button' type='submit'>";
                                 echo "<img class='btn trash' src='../assets/images/trash.svg'>";
