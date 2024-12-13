@@ -17,6 +17,7 @@
     <?php
       include 'pages/home.php';
       include 'pages/about.php';
+      include 'pages/news.php';
       include 'pages/services.php';
       include 'pages/projects.php';
       include 'pages/contact.php';
@@ -25,5 +26,6 @@
   <?php
     include 'elements/footer.php';
   ?>
+  <script src="js/carousel.js"></script>  
 </body>
 </html>

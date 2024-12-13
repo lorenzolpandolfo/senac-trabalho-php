@@ -6,6 +6,7 @@
 @import url('admin_login.css');
 @import url('contact.css');
 @import url('../dashboard/css/style.css');
+@import url('../css/news.css');
 
 * {
     box-sizing: border-box;
@@ -149,3 +150,4 @@ button:hover {
 .dsb-spacing {
     padding: 40px 0;
 }
+
