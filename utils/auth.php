@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = login_user($email, $password);
     if ($user) {
         $_SESSION['user'] = $user;
-        header('Location: /dashboard');
+        header('Location: ../dashboard');
         exit;
     }
     header('Location: ../admin');
