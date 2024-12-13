@@ -36,9 +36,9 @@ left: 10%;
 right: 10%;
 background: rgba(250, 248, 248, 0.6);
 color: #fff;
-padding: 80px;
+padding: 20px;
 transition: max-height 0.3s ease;
-max-height: 80px;
+max-height: 200px;
 
 }
 .carousel-caption p{

@@ -5,9 +5,9 @@
     
     <?php
     $slides = [
-    ["image" => "https://via.placeholder.com/800x400", "title" => "Título da Notícia 1", "text" => "Resumo da notícia 1."],
-    ["image" => "https://via.placeholder.com/800x400", "title" => "Título da Notícia 2", "text" => "Resumo da notícia 2."],
-    ["image" => "https://via.placeholder.com/800x400", "title" => "Título da Notícia 3", "text" => "Resumo da notícia 3."]
+    ["image" => "assets/images/news.jpg", "title" => "Sendo Criativo", "text" => "Ser criativo é a capacidade de transformar ideias comuns em soluções originais, enxergando possibilidades onde outros veem limites. "],
+    ["image" => "assets/images/news2.jpg", "title" => "Descobrindo o Time", "text" => "Se redescobrir no time é um processo de renovação e autoconhecimento que permite reconectar-se com seus objetivos e com a dinâmica da equipe."],
+    ["image" => "assets/images/news3.jpg", "title" => "Acelerando Ideias", "text" => "Receber ideias de melhoria é um ato fundamental para o crescimento e a inovação em qualquer empresa."]
     ];
     ?>
     <div class="carousel">
