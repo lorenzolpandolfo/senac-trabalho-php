@@ -13,7 +13,7 @@ $u["full_name"] = $new_name ?: $u["full_name"];
 update_user($u);
 $_SESSION["user"] = get_user_data();
 
-header('Location: /dashboard');
+header('Location: ../dashboard');
 
 function update_user($user) {
     include "database.php";

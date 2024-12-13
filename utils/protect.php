@@ -2,6 +2,6 @@
 session_start();
 
 if (!isset($_SESSION) || !$_SESSION["user"]) {
-    header("Location: admin");
+    header("Location: ../admin");
 }
 ?>

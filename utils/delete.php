@@ -11,7 +11,7 @@
         echo $deleted;
 
         if ($deleted) {
-            header("Location: /dashboard");
+            header("Location: ../dashboard");
         }
 
         echo "deu ruim";

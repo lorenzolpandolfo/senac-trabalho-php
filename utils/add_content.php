@@ -4,7 +4,7 @@ if (isset($_POST["new_content_location"])) {
     add_content($_POST["new_content_location"], $_POST["new_content_message"]);
 }
 
-header("Location: /dashboard");
+header("Location: ../dashboard");
 
 function add_content($location, $message) {
     include "database.php";

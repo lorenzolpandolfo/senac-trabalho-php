@@ -1,5 +1,4 @@
 <?php
-session_start();
 include "../utils/list_all_admin.php";
 $_SESSION["admins"] = get_all_admin();
 
@@ -29,7 +28,7 @@ $_SESSION["admins"] = get_all_admin();
                                     echo "<form action='utils/delete.php' method='post'>";
                                     echo "<input type='hidden' name='userId_to_delete' value='$userId'>";
                                     echo "<button class='invisible-button' type='submit'>";
-                                    echo "<img class='btn trash' src='/assets/images/trash.svg'>";
+                                    echo "<img class='btn trash' src='../assets/images/trash.svg'>";
                                     echo "</button>";
                                     echo "</form>";
                                 }
@@ -44,7 +43,7 @@ $_SESSION["admins"] = get_all_admin();
         </form>
         <div class="right-div">
             <span class="subtitle">Cadastrar</span>
-            <form action="/register" method="POST">
+            <form action="../register" method="POST">
                 <div class="inputs">
                     <input class="dashboard-input" type="text" name="full_name" id="full_name" placeholder="nome completo" required>
                     <input class="dashboard-input" type="email" name="email" id="email" placeholder="email" required>

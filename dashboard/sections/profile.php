@@ -1,7 +1,7 @@
 <div class="dashboard-section">
     <span class="title">Meu perfil</span>
     <div class="top-div">
-        <form action="/upload" method="POST" enctype="multipart/form-data" class="profile-image">
+        <form action="../upload" method="POST" enctype="multipart/form-data" class="profile-image">
             <label for="image">
                 <?php
                     echo "<img src='{$_SESSION['user']['pfp_path']}' alt='user profile' class='upload-image btn' draggable='false'>";
@@ -11,7 +11,7 @@
             <button type="submit" class="btn secondary-button small-button">Fazer upload</button>
         </form>
 
-        <form action="/utils/update_user.php" method="POST" class="dashboard-center">
+        <form action="../utils/update_user.php" method="POST" class="dashboard-center">
             <div class="user-data">
                 <?php
                 echo "<input class='dashboard-input' type='text' name='full_name' id='full-name' value='{$_SESSION['user']['full_name']}'>";

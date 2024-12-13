@@ -1,4 +1,4 @@
-<form action="/utils/change_dashboard_section.php" method="POST" class="sidebar">
+<form action="../utils/change_dashboard_section.php" method="POST" class="sidebar">
     <ul>
         <li>
             <button class="btn dashboard-button" type="submit" name="section_to" value="profile">

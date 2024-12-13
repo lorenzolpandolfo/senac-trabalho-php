@@ -6,7 +6,7 @@
         <nav>
           <ul class="header-nav">
             <li>
-              <a href="/logout">Sair</a>
+              <a href="../logout">Sair</a>
             </li>
           </ul>
         </nav>
