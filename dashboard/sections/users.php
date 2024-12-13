@@ -7,40 +7,38 @@ $_SESSION["admins"] = get_all_admin();
 <div class="dashboard-section">
     <span class="title">Usuários</span>
     <div class="users">
-        <form action="" method="GET">
-            <div class="left-div">
-                <span class="subtitle">Administradores</span>
-                <div class="admins-list">
-                    <?php
-                        if (!empty($_SESSION["admins"])) {
-                            foreach ($_SESSION["admins"] as $admin) {
-                                $fullName = htmlspecialchars($admin['full_name']);
-                                $pfpPath = htmlspecialchars($admin['pfp_path']);
-                                $userId = htmlspecialchars($admin['id']);
+        <div class="left-div">
+            <span class="subtitle">Administradores</span>
+            <div class="admins-list">
+                <?php
+                    if (!empty($_SESSION["admins"])) {
+                        foreach ($_SESSION["admins"] as $admin) {
+                            $fullName = htmlspecialchars($admin['full_name']);
+                            $pfpPath = htmlspecialchars($admin['pfp_path']);
+                            $userId = htmlspecialchars($admin['id']);
 
-                                echo "<div class='admin-item'>";
-                                echo "<div class='user-card'>";
-                                echo "<img src='$pfpPath' alt='Foto de $fullName' class='admin-img' draggable='false'>";
-                                echo "<span class='admin-name'>$fullName</span>";
-                                echo "</div>";
+                            echo "<div class='admin-item'>";
+                            echo "<div class='user-card'>";
+                            echo "<img src='$pfpPath' alt='Foto de $fullName' class='admin-img' draggable='false'>";
+                            echo "<span class='admin-name'>$fullName</span>";
+                            echo "</div>";
 
-                                if ($_SESSION['user']['id'] != $userId) {
-                                    echo "<form action='utils/delete.php' method='post'>";
-                                    echo "<input type='hidden' name='userId_to_delete' value='$userId'>";
-                                    echo "<button class='invisible-button' type='submit'>";
-                                    echo "<img class='btn trash' src='../assets/images/trash.svg'>";
-                                    echo "</button>";
-                                    echo "</form>";
-                                }
-                                echo "</div>";
+                            if ($_SESSION['user']['id'] != $userId) {
+                                echo "<form action='utils/delete.php' method='post'>";
+                                echo "<input type='hidden' name='userId_to_delete' value='$userId'>";
+                                echo "<button class='invisible-button' type='submit'>";
+                                echo "<img class='btn trash' src='../assets/images/trash.svg'>";
+                                echo "</button>";
+                                echo "</form>";
                             }
-                        } else {
-                            echo "<div>Nenhum administrador encontrado.</div>";
+                            echo "</div>";
                         }
-                    ?>
-                </div>
+                    } else {
+                        echo "<div>Nenhum administrador encontrado.</div>";
+                    }
+                ?>
             </div>
-        </form>
+        </div>
         <div class="right-div">
             <span class="subtitle">Cadastrar</span>
             <form action="../register" method="POST">

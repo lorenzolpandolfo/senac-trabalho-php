@@ -10,6 +10,6 @@
     
         register_user($full_name, $email, $password, $is_admin);
     }
-    header('Location: ../admin');
+    header('Location: ../dashboard');
     exit;
     ?>
